@@ -207,3 +207,190 @@ body {
     }
 }
 
+/* Recently Reported Items Section */
+.items-section {
+    padding: 70px 7%;
+    background-color: #f5f7fb;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #123b63;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Item Categories */
+.item-category {
+    margin-bottom: 45px;
+}
+
+.item-category h3 {
+    color: #123b63;
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+/* Items Layout */
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Individual Item Cards */
+.item-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Item Image Area */
+.item-image {
+    width: 110px;
+    min-height: 180px;
+    background-color: #eaf3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.item-image span {
+    font-size: 45px;
+}
+
+/* Item Details */
+.item-details {
+    padding: 18px 15px;
+}
+
+.item-details h4 {
+    color: #123b63;
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+.item-details p {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+/* Lost and Found Labels */
+.status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.lost {
+    background-color: #ffe5e5;
+    color: #c62828;
+}
+
+.found {
+    background-color: #e2f5e9;
+    color: #218838;
+}
+
+/* View Details Link */
+.item-details a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1769aa;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.item-details a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    .items-section {
+        padding: 50px 5%;
+    }
+
+    .item-card {
+        flex-direction: column;
+    }
+
+    .item-image {
+        width: 100%;
+        min-height: 130px;
+    }
+}
+
+/* How FindIt Works Section */
+.how-it-works {
+    padding: 70px 7%;
+    background-color: #ffffff;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.step-card {
+    background-color: #f5f7fb;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+.step-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.step-card h3 {
+    color: #123b63;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
